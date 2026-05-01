@@ -1,16 +1,24 @@
-    #Mi primer experimento con Nikel Menu
+    #Mi primer experimento con Nikel Nri
     #   menu_item:<location>:<label>:<action>:<arg>
-    
-    #-----------------------------------GoogleDrive & Dropbox
-    menu_item :main      :Google Drive    :nickel_open     :library    :gdrive
-    menu_item :library      :DropBox         :nickel_open     :library    :dropbox
-    #--------------------------------Apagar y Reiniciar
-    menu_item :main         :Apagar          :power     :shutdown
-    menu_item :main         :Reiniciar       :power     :reboot
-    #-----------------------------Captura de pantalla
-    menu_item :main         :Screenshots     :nickel_screenshot  :capture
+
     #---------------------------------Extras
-    menu_item :main         :Estadisticas    :nickel_open  :reading_life    :stats
+    menu_item :main         :⌘ Estadisticas     :nickel_open  :reading_life    :stats
+    menu_item :main         :✿ Jugar           :nickel_extras:unblock_it  
+
+    
+    #--------------------------GoogleDrive & Dropbox ------En la biblioteca
+    menu_item :library      :Google Drive    :nickel_open     :library    :gdrive
+    menu_item :library      :DropBox         :nickel_open     :library    :dropbox
+
+    #-----------------------------Captura de pantalla (Toggle)
+    menu_item :main         :Screenshots     :nickel_setting  :toggle       :screenshots
+    
+    #--------------------En el menu de lectura
+    menu_item :reader       :Screenshots     :nickel_setting  :toggle       :screenshots
+    menu_item :reader       :Modo oscuro     :nickel_setting : toggle       :dark_mode   
+    #--------------------------------Apagar y Reiniciar
+    menu_item :main         :◐ Apagar          :power     :shutdown
+    menu_item :main         :★ Reiniciar       :power     :reboot
     
     #------------------Editar Icono
     experimental:menu_main_15505_label :More
